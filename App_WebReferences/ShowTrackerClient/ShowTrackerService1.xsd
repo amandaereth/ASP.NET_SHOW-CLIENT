@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfShowLite">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ShowLite" nillable="true" type="tns:ShowLite" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfShowLite" nillable="true" type="tns:ArrayOfShowLite" />
+  <xs:complexType name="ShowLite">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Artist" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Time" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Venue" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShowLite" nillable="true" type="tns:ShowLite" />
+</xs:schema>
